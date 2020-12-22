@@ -1,16 +1,16 @@
 module.exports = {
   siteMetadata: {
-    siteTitle: `@rocketseat/gatsby-theme-docs`,
-    defaultTitle: `@rocketseat/gatsby-theme-docs`,
-    siteTitleShort: `gatsby-theme-docs`,
-    siteDescription: `Out of the box Gatsby Theme for creating documentation websites easily and quickly`,
-    siteUrl: `https://rocketdocs.netlify.com`,
-    siteAuthor: `@rocketseat`,
-    siteImage: `/banner.png`,
+    siteTitle: `Dave Buckley`,
+    defaultTitle: `Dave Buckley`,
+    siteTitleShort: `dave-buckley`,
+    siteDescription: `Personal Website and Blog`,
+    siteUrl: `https://dbckz.github.io/`,
+    siteAuthor: `@dbckz`,
+    siteImage: `/favicon.jpg`,
     siteLanguage: `en`,
-    themeColor: `#7159c1`,
+    themeColor: `#29e4ae`,
     basePath: `/`,
-    footer: `Theme by Rocketseat`,
+    footer: ``,
   },
   plugins: [
     {
@@ -18,32 +18,24 @@ module.exports = {
       options: {
         configPath: `src/config`,
         docsPath: `src/docs`,
-        githubUrl: `https://github.com/rocketseat/gatsby-themes`,
-        baseDir: `examples/gatsby-theme-docs`,
       },
     },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Rocketseat Gatsby Themes`,
-        short_name: `RS Gatsby Themes`,
+        name: `Dave Buckley`,
+        short_name: `Dave Buckley`,
         start_url: `/`,
         background_color: `#ffffff`,
         display: `standalone`,
-        icon: `static/favicon.png`,
+        icon: `static/favicon.jpg`,
       },
     },
     `gatsby-plugin-sitemap`,
     {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        // trackingId: ``,
-      },
-    },
-    {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
-        siteUrl: `https://rocketdocs.netlify.com`,
+        siteUrl: `https://dbckz.github.io`,
       },
     },
     `gatsby-plugin-offline`,
